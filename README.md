@@ -26,3 +26,6 @@ Contains various customizations of open-source User Interface tools like rofi, w
 
 # Rofimoji customization
   A drop in replacement for the emoji picker. Uses Rofimoji.
+
+# ScreenPad Tools
+  Builds, Rebuilds, or Removes Screenpad tools and associated DKMS module using one single script.
