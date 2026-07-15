@@ -1,0 +1,105 @@
+* {
+    selected-normal-foreground:  rgba ( 129, 147, 150, 100 % );
+    foreground:                  rgba ( 129, 147, 150, 100 % );
+    normal-foreground:           @foreground;
+    alternate-normal-background: rgba ( 0, 43, 55, 100 % );
+    red:                         rgba ( 220, 50, 47, 100 % );
+    selected-urgent-foreground:  rgba ( 218, 66, 129, 100 % );
+    blue:                        rgba ( 38, 139, 210, 100 % );
+    urgent-foreground:           rgba ( 218, 66, 129, 100 % );
+    alternate-urgent-background: rgba ( 0, 43, 55, 100 % );
+    active-foreground:           rgba ( 0, 142, 212, 100 % );
+    lightbg:                     rgba ( 238, 232, 213, 100 % );
+    selected-active-foreground:  rgba ( 0, 142, 212, 100 % );
+    alternate-active-background: rgba ( 0, 43, 55, 100 % );
+    background:                  rgba ( 0, 43, 55, 100 % );
+    bordercolor:                 rgba ( 0, 43, 55, 100 % );
+    alternate-normal-foreground: @foreground;
+    normal-background:           rgba ( 0, 43, 55, 100 % );
+    lightfg:                     rgba ( 88, 104, 117, 100 % );
+    selected-normal-background:  rgba ( 0, 54, 66, 100 % );
+    border-color:                @foreground;
+    spacing:                     2;
+    separatorcolor:              rgba ( 0, 54, 66, 100 % );
+    urgent-background:           rgba ( 0, 43, 55, 100 % );
+    selected-urgent-background:  rgba ( 0, 54, 66, 100 % );
+    alternate-urgent-foreground: @urgent-foreground;
+    background-color:            rgba ( 0, 0, 0, 0 % );
+    alternate-active-foreground: @active-foreground;
+    active-background:           rgba ( 0, 43, 55, 100 % );
+    selected-active-background:  rgba ( 0, 54, 66, 100 % );
+}
+timeout {
+      action: "kb-cancel";
+      delay:  0;
+}
+window{
+      fullscreen: false;
+      text-color: #FFFFFF;
+      background-color: #00000088;
+      font:"Noto Sans 16";
+      children: [inputbar, listview];
+      border-radius: 20 px;
+      width: 400px;
+      padding:10px;
+}
+
+inputbar{
+  padding: 10px;
+  children: [entry];
+}
+
+entry {
+  text-color: #FFFFFF;
+  vertical-align:0.5;
+  horizontal-align:0.5;
+  text-align: center;
+  hide-cursor-on-empty:true;
+  placeholder: "how are ya feelin'";
+  placeholder-color:#ffffff66;
+  font:"Noto Sans 16";
+}
+
+element-text normal{
+  text-color:#ffffff66;
+  border:0;
+  horizontal-align:0.5;
+  vertical-align:0.5;
+  border-radius: 10px;
+  font:"Noto Sans 16";
+}
+
+listview{
+  require-input:false;
+  border:0;
+  spacing:0px;
+  scrollbar:false;
+  fixed-columns:true;
+  columns:10;
+  lines: 10;
+}
+
+element-text selected{
+  vertical-align:0.5;
+  text-color:#000000;
+  border: 2px;
+  border-radius: 10px;
+}
+
+element.normal.normal {
+    background-color: #ff000000;
+}
+
+element.alternate.normal {
+    background-color: #ff000000;
+    border-radius: 10px;
+}
+
+element.selected.normal {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+element-icon {
+    padding:5px;
+}

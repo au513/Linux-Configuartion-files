@@ -1,0 +1,54 @@
+#waybar.clockandmusic {
+background-color: transparent; /* Dark grey with 70% opacity */
+color: #ffffff;
+font-family: "Noto Sans";
+font-size: 28px;
+}
+
+#clock {
+padding-left: 10px;
+background-color: rgba(30,30,30,0.7);
+font-style: italic;
+border-radius: 0px;
+margin-right: 0px;
+margin-bottom: 20px;
+padding-bottom: 2px;
+padding-top: 1px;
+}
+
+#clock.ampm {
+padding:0;
+padding-right: 10px;
+padding-top:  12px;
+margin-top: 0px;
+background-color: rgba(30,30,30,0.7);
+font-size:14px;
+font-style: italic;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+margin-right: 20px;
+}
+
+#mpris.title {
+font-size:12px;
+background-color: rgba(30,30,30,0.7);
+font-weight:bold;
+border-radius: 0px;
+padding-left:10px;
+padding-top:2px;
+padding-bottom: 2px;
+border-top-left-radius: 10px;
+}
+
+#mpris.artist {
+font-size:12px;
+font-style: italic;
+background-color: rgba(30,30,30,0.7);
+padding-left:10px;
+border-bottom-left-radius: 10px;
+padding-bottom:4px
+}
+
+#clock.date{
+    padding-left:200px;
+}
